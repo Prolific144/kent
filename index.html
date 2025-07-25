@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K.ent</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Orbitron:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+</head>
+<body>
+    <nav class="futuristic-nav">
+        <div class="logo">
+            <span class="logo-text">K.ent</span>
+        </div>
+        <div class="nav-links">
+            <a href="#dj" class="nav-link dj">DJ Services</a>
+            <a href="#pyro" class="nav-link pyro">Pyrotechnics</a>
+            <a href="#testimonials" class="nav-link">Testimonials</a>
+            <a href="#contactModal" class="nav-link">Contact</a>
+        </div>
+        <div class="mobile-menu-btn">☰</div>
+    </nav>
+
+    <section class="hero">
+        <div id="particles-js" class="particle-bg"></div>
+        <div class="hero-content">
+            <h1 class="futuristic-title">ELEVATE YOUR EVENT</h1>
+            <p class="hero-subtitle">With cutting-edge DJ performances and breathtaking pyrotechnics</p>
+            <button class="cta-button book-now">BOOK NOW</button>
+            <p class="event-counter">🎧 Next Event: <span class="event-ticker">Upcoming Event</span></p>
+            <div class="social-media">
+                <a href="https://www.instagram.com/kent_events" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com/kent_events" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.facebook.com/kent.events" class="social-icon"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.youtube.com/channel/kent_events" class="social-icon"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="event-types">
+        <h2 class="futuristic-title">Events We Transform</h2>
+        <div class="color-bar"></div>
+        <div class="event-types-content">
+            <div class="event-type" data-type="weddings">
+                <i class="fas fa-ring"></i>
+                <p>Weddings</p>
+            </div>
+            <div class="event-type" data-type="corporate">
+                <i class="fas fa-briefcase"></i>
+                <p>Corporate Events</p>
+            </div>
+            <div class="event-type" data-type="nightclubs">
+                <i class="fas fa-moon"></i>
+                <p>Nightclubs</p>
+            </div>
+            <div class="event-type" data-type="private">
+                <i class="fas fa-glass-cheers"></i>
+                <p>Private Parties</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Type Modals -->
+    <div id="eventTypeModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">×</span>
+            <h2 class="event-modal-title">Event Title</h2>
+            <div class="event-modal-content">
+                <div class="event-modal-image">
+                    <img src="" alt="Event Image" id="eventModalImage">
+                </div>
+                <div class="event-modal-description" id="eventModalDescription">
+                    Event description will appear here.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="dj" class="service-section dj-section">
+        <div class="section-header">
+            <h2>DJ SERVICES</h2>
+            <div class="color-bar"></div>
+        </div>
+        <div class="service-content">
+            <div class="service-image">
+                <img src="images/dj-service.jpg" alt="DJ Performance">
+            </div>
+            <div class="service-description">
+                <p>Transform your event with our state-of-the-art DJ performances. Custom mixes, seamless transitions, and an electrifying atmosphere tailored to your vision.</p>
+                <button class="service-button dj">LEARN MORE</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="pyro" class="service-section pyro-section">
+        <div class="section-header">
+            <h2>PYROTECHNICS</h2>
+            <div class="color-bar"></div>
+        </div>
+        <div class="service-content reverse">
+            <div class="service-image">
+                <video autoplay loop muted playsinline>
+                    <source src="videos/pyro.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="service-description">
+                <p>Ignite your event with our professional pyrotechnic displays. Safe, spectacular, and synchronized to perfection with your music or event flow.</p>
+                <button class="service-button pyro">LEARN MORE</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials" id="testimonials">
+        <div class="section-header">
+            <h2>What Our Clients Say</h2>
+            <div class="color-bar"></div>
+            <p>Don't just take our word for it - hear from our satisfied clients.</p>
+        </div>
+        <div class="testimonials-container">
+            <div class="testimonial-slide active">
+                <div class="testimonial-content">
+                    "End Year Party has always been done by K.ent, delivering an unforgettable experience with their DJ and pyrotechnic displays."
+                </div>
+                <div class="testimonial-author">
+                    <div class="author-img">
+                        <img src="images/testimony1.jpg" alt="Philip N.">
+                    </div>
+                    <div class="author-info">
+                        <h4>Philip Nyakundi</h4>
+                        <p>CEO, Supremeixx Tech Startup</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-slide">
+                <div class="testimonial-content">
+                    "As a businessman, I've always wanted the year to end with fireworks and to start the new year in style. K.ent made it simple and affordable, giving me peace of mind."
+                </div>
+                <div class="testimonial-author">
+                    <div class="author-img">
+                        <img src="images/testimony2.jpg" alt="Alex N.">
+                    </div>
+                    <div class="author-info">
+                        <h4>Alex Ndolo</h4>
+                        <p>Business Owner</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-slide">
+                <div class="testimonial-content">
+                    "With friends, family, and believers joining to cross the year with colorful fireworks and a great party atmosphere, K.ent has made my year-end celebrations unforgettable."
+                </div>
+                <div class="testimonial-author">
+                    <div class="author-img">
+                        <img src="images/testimony3.jpg" alt="Fr. Tommy">
+                    </div>
+                    <div class="author-info">
+                        <h4>Fr. Tommy</h4>
+                        <p>Father, Kalimoni Parish</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-nav">
+                <span class="nav-dot active"></span>
+                <span class="nav-dot"></span>
+                <span class="nav-dot"></span>
+            </div>
+        </div>
+    </section>
+
+    <div id="bookModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">×</span>
+            <h2>BOOK YOUR EVENT</h2>
+            <form id="bookingForm" action="/submit-booking" method="POST">
+                <div class="form-group">
+                    <label for="serviceType">Service Type</label>
+                    <select id="serviceType" name="serviceType" required>
+                        <option value="" disabled selected>Select a service</option>
+                        <option value="dj">DJ Services</option>
+                        <option value="pyro">Pyrotechnics</option>
+                        <option value="both">Both Services</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="eventDate">Event Date</label>
+                    <input type="date" id="eventDate" name="eventDate" required>
+                </div>
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="eventDetails">Event Details</label>
+                    <textarea id="eventDetails" name="eventDetails" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">SUBMIT BOOKING</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">×</span>
+            <h2>CONTACT US</h2>
+            <form id="contactForm" action="/submit-contact" method="POST">
+                <div class="form-group">
+                    <label for="contactName">Your Name</label>
+                    <input type="text" id="contactName" name="contactName" required>
+                </div>
+                <div class="form-group">
+                    <label for="contactEmail">Email</label>
+                    <input type="email" id="contactEmail" name="contactEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">SEND MESSAGE</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="offerModal" class="modal">
+        <div class="modal-content offer-content">
+            <span class="close-offer">×</span>
+            <h2>Limited-Time Offer!</h2>
+            <p>Book by August 31, 2025, for 10% off your first event!</p>
+            <button class="cta-button book-now">Book Now</button>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <p>© SnoogAnalytics</p>
+    </footer>
+
+    <a href="https://wa.me/+1234567890" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
