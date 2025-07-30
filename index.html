@@ -3,37 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>K.ent - Premium DJ, Pyrotechnics & Lighting</title>
-    <meta name="description" content="Professional DJ services, certified pyrotechnics and advanced lighting solutions for weddings, clubs, and special events">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.4.1/swiper-bundle.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Orbitron:wght@700&display=swap" rel="stylesheet">
+    <title>Konstant Entertainment - Premium DJ, Pyrotechnics & Lighting</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="preload" href="assets/hero-video.mp4" as="video" type="video/mp4">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
 </head>
 <body>
-    <!-- Loader -->
+    <!-- Preloader -->
     <div class="loader">
         <div class="loader-content">
             <div class="equalizer">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
+                <div class="bar" style="--delay: 0s;"></div>
+                <div class="bar" style="--delay: 0.2s;"></div>
+                <div class="bar" style="--delay: 0.4s;"></div>
+                <div class="bar" style="--delay: 0.6s;"></div>
             </div>
-            <p>Loading the Experience...</p>
+            <div class="loader-text">Loading the Experience...</div>
+            <div class="loader-text2">Powered By SnooG Analytics</div>
         </div>
     </div>
 
     <!-- Music Player -->
     <div class="music-player">
-        <div class="player-controls container">
+        <div class="player-controls">
             <button id="playPauseBtn"><i class="fas fa-play"></i></button>
             <div class="track-info">
-                <span class="track-name">Select a Track</span>
+                <div class="track-name">Select a Track</div>
                 <div class="progress-container">
                     <div class="progress-bar"></div>
                 </div>
@@ -43,158 +40,153 @@
     </div>
     <button class="mini-player-btn"><i class="fas fa-music"></i></button>
 
-    <!-- Navigation -->
-    <nav class="navbar futuristic-nav">
+    <!-- Navbar -->
+    <nav class="navbar">
         <div class="container">
-            <a href="#" class="logo"><span>K.</span>ent</a>
+            <a href="#" class="logo">K.Ent</a>
             <div class="nav-links">
                 <a href="#home" class="nav-link">Home</a>
-                <a href="#dj" class="nav-link">DJ Services</a>
-                <a href="#pyro" class="nav-link">Pyrotechnics</a>
+                <a href="#dj-services" class="nav-link">DJ Services</a>
+                <a href="#pyrotechnics" class="nav-link">Pyrotechnics</a>
                 <a href="#lighting" class="nav-link">Lighting</a>
-                <a href="#book" class="nav-link book-now">Book Now</a>
+                <a href="#booking" class="nav-link book-now">Book Now</a>
+                <button class="theme-toggle"><i class="fas fa-sun"></i></button>
             </div>
-            <button class="hamburger"><span></span><span></span><span></span></button>
-            <button class="theme-toggle">🌙</button>
+            <button class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-video">
-            <video autoplay muted loop playsinline>
-                <source src="assets/hero-video.mp4" type="video/mp4">
-            </video>
             <div class="video-overlay"></div>
+            <video autoplay muted loop>
+                <source src="assets/hero-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
         </div>
         <div class="content">
-            <h1 class="animated-title">K.ent Entertainment</h1>
+            <h1 class="animated-title">Konstant Entertainment</h1>
             <p class="animated-subtitle">Premium DJ Services, Pyrotechnics & Lighting Solutions</p>
             <div class="cta-buttons">
-                <a href="#book" class="btn cta-btn book-now">Book Now</a>
-                <a href="#services" class="btn secondary-btn">Explore Services</a>
-            </div>
-            <div class="event-ticker">Next Event: Tomorrow @ Club XYZ</div>
+                <a href="#booking" class="btn cta-btn">Book Now</a>
+                <a href="#dj-services" class="btn secondary-btn">Explore Services</a>
+            </div>    
+            <div class="event-counter">🎧 Next Event: <span class="event-ticker">UPCOMING EVENT(S)...</span></div>
             <div class="socials">
-                <a href="#" class="social-btn whatsapp"><i class="fab fa-whatsapp"></i></a>
-                <a href="#" class="social-btn instagram"><i class="fab fa-instagram"></i></a>
-                <a href="#" class="social-btn email"><i class="fas fa-envelope"></i></a>
-                <a href="#" class="social-btn phone"><i class="fas fa-phone"></i></a>
+                <a href="#" class="social-btn"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-x"></i></a>
+                <a href="#" class="social-btn"><i class="fab fa-youtube"></i></a>
+                <a href="#" class="social-btn"><i class="fab fa-tiktok"></i></a>
             </div>
             <div class="scroll-indicator">
-                <div class="mouse"><div class="scroller"></div></div>
-                <p>Scroll Down</p>
+                <div class="mouse">
+                    <div class="scroller"></div>
+                </div>
+                Scroll Down
             </div>
         </div>
     </section>
 
-    <!-- Event Types Section -->
-    <section id="services" class="event-types reveal">
+    <!-- Event Types -->
+    <section id="event-types" class="event-types reveal">
         <div class="container">
             <div class="section-header">
-                <h2><i class="fas fa-star"></i> Events We Transform <i class="fas fa-star"></i></h2>
-                <div class="color-bar"></div>
+                <h2><i class="fas fa-star"></i> Events We Transform</h2>
+                <p class="section-subtitle">Your vision, our expertise</p>
             </div>
             <div class="event-types-content">
-                <div class="event-type" data-type="weddings">
+                <div class="event-type">
                     <i class="fas fa-ring"></i>
-                    <p>Weddings</p>
+                    <h3>Weddings</h3>
                 </div>
-                <div class="event-type" data-type="corporate">
+                <div class="event-type">
                     <i class="fas fa-briefcase"></i>
-                    <p>Corporate Events</p>
+                    <h3>Corporate Events</h3>
                 </div>
-                <div class="event-type" data-type="nightclubs">
-                    <i class="fas fa-music"></i>
-                    <p>Nightclubs</p>
+                <div class="event-type">
+                    <i class="fas fa-headphones"></i>
+                    <h3>Nightclubs</h3>
                 </div>
-                <div class="event-type" data-type="private">
-                    <i class="fas fa-party-horn"></i>
-                    <p>Private Parties</p>
+                <div class="event-type">
+                    <i class="fas fa-cocktail"></i>
+                    <h3>Private Parties</h3>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- DJ Section -->
-    <section id="dj" class="dj-section reveal">
+    <!-- DJ Services -->
+    <section id="dj-services" class="dj-section reveal">
         <div class="container">
             <div class="section-header">
                 <h2><i class="fas fa-headphones"></i> DJ Services</h2>
-                <div class="color-bar"></div>
                 <p class="section-subtitle">Premium sound for unforgettable experiences</p>
             </div>
             <div class="dj-content">
-                <div class="dj-info">
-                    <div class="service-card">
-                        <div class="card-icon"><i class="fas fa-ring"></i></div>
-                        <h3>Weddings</h3>
-                        <p>Custom mixes to match your special day's vibe with seamless transitions.</p>
-                        <button class="modal-trigger" data-modal="wedding-dj">Learn More</button>
-                    </div>
-                    <div class="service-card">
-                        <div class="card-icon"><i class="fas fa-briefcase"></i></div>
-                        <h3>Corporate Events</h3>
-                        <p>Professional sound for product launches, galas, and company parties.</p>
-                        <button class="modal-trigger" data-modal="corporate-dj">Learn More</button>
-                    </div>
-                    <div class="service-card">
-                        <div class="card-icon"><i class="fas fa-party-horn"></i></div>
-                        <h3>Private Parties</h3>
-                        <p>Tailored playlists to match your personal taste and party theme.</p>
-                        <button class="modal-trigger" data-modal="private-dj">Learn More</button>
-                    </div>
+                <div class="service-card">
+                    <i class="fas fa-ring card-icon"></i>
+                    <h3>Weddings</h3>
+                    <p>Custom mixes to match your special day's vibe with seamless transitions.</p>
+                    <button class="modal-trigger" data-modal="weddingModal">Learn More</button>
                 </div>
-                <div class="dj-demo">
-                    <div class="mixer-container">
-                        <div class="mixer">
-                            <div class="deck">
-                                <div class="vinyl"><div class="vinyl-inner"></div></div>
-                                <div class="controls">
-                                    <button class="control-btn"><i class="fas fa-play"></i></button>
-                                    <button class="control-btn"><i class="fas fa-stop"></i></button>
-                                </div>
-                            </div>
-                            <div class="equalizer-visualizer">
-                                <div class="bar" style="--i: 1"></div>
-                                <div class="bar" style="--i: 2"></div>
-                                <div class="bar" style="--i: 3"></div>
-                                <div class="bar" style="--i: 4"></div>
-                                <div class="bar" style="--i: 5"></div>
-                            </div>
-                            <div class="deck">
-                                <div class="vinyl"><div class="vinyl-inner"></div></div>
-                                <div class="controls">
-                                    <button class="control-btn"><i class="fas fa-play"></i></button>
-                                    <button class="control-btn"><i class="fas fa-stop"></i></button>
-                                </div>
-                            </div>
+                <div class="service-card">
+                    <i class="fas fa-briefcase card-icon"></i>
+                    <h3>Corporate Events</h3>
+                    <p>Professional sound for product launches, galas, and company parties.</p>
+                    <button class="modal-trigger" data-modal="corporateModal">Learn More</button>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-church card-icon"></i>
+                    <h3>Church Events</h3>
+                    <p>Engaging music for church events, ensuring a spiritual and uplifting atmosphere.</p>
+                    <button class="modal-trigger" data-modal="churchModal">Learn More</button>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-cocktail card-icon"></i>
+                    <h3>Private Parties</h3>
+                    <p>Tailored playlists to match your personal taste and party theme.</p>
+                    <button class="modal-trigger" data-modal="partyModal">Learn More</button>
+                </div>
+                <div class="mixer-container">
+                    <h3>Sample Mixes</h3>
+                    <div class="track-list">
+                        <div class="track" data-src="assets/wedding-mix.mp3">
+                            <button class="track-play-btn"><i class="fas fa-play"></i></button>
+                            <span class="track-name">Wedding Mix Demo</span>
+                            <span>3:45</span>
+                        </div>
+                        <div class="track" data-src="assets/club-set.mp3">
+                            <button class="track-play-btn"><i class="fas fa-play"></i></button>
+                            <span class="track-name">Club Set Preview</span>
+                            <span>4:12</span>
+                        </div>
+                        <div class="track" data-src="assets/corporate-mix.mp3">
+                            <button class="track-play-btn"><i class="fas fa-play"></i></button>
+                            <span class="track-name">Corporate Event Mix</span>
+                            <span>3:28</span>
+                        </div>
+                        <div class="track" data-src="assets/church-mix.mp3">
+                            <button class="track-play-btn"><i class="fas fa-play"></i></button>
+                            <span class="track-name">Church Event Mix</span>
+                            <span>3:15</span>
                         </div>
                     </div>
-                    <div class="demo-tracks">
-                        <h3>Sample Mixes</h3>
-                        <div class="track-list">
-                            <div class="track" data-src="assets/mix1.mp3">
-                                <div class="track-play-btn"><i class="fas fa-play"></i></div>
-                                <div class="track-info">
-                                    <span class="track-name">Wedding Mix Demo</span>
-                                    <span class="track-duration">3:45</span>
-                                </div>
+                    <div class="mixer">
+                        <div class="deck">
+                            <div class="vinyl">
+                                <div class="vinyl-inner"></div>
                             </div>
-                            <div class="track" data-src="assets/mix2.mp3">
-                                <div class="track-play-btn"><i class="fas fa-play"></i></div>
-                                <div class="track-info">
-                                    <span class="track-name">Club Set Preview</span>
-                                    <span class="track-duration">4:12</span>
-                                </div>
-                            </div>
-                            <div class="track" data-src="assets/mix3.mp3">
-                                <div class="track-play-btn"><i class="fas fa-play"></i></div>
-                                <div class="track-info">
-                                    <span class="track-name">Corporate Event Mix</span>
-                                    <span class="track-duration">3:28</span>
-                                </div>
-                            </div>
+                        </div>
+                        <div class="equalizer-visualizer">
+                            <div class="bar" style="--i: 0;"></div>
+                            <div class="bar" style="--i: 1;"></div>
+                            <div class="bar" style="--i: 2;"></div>
+                            <div class="bar" style="--i: 3;"></div>
                         </div>
                     </div>
                 </div>
@@ -202,118 +194,199 @@
         </div>
     </section>
 
-    <!-- Pyro Section -->
-    <section id="pyro" class="pyro-section reveal">
+    <!-- Pyrotechnics -->
+    <section id="pyrotechnics" class="pyro-section reveal">
         <div class="container">
             <div class="section-header">
                 <h2><i class="fas fa-fire"></i> Pyrotechnics</h2>
-                <div class="color-bar"></div>
                 <p class="section-subtitle">Ignite your event with breathtaking effects</p>
             </div>
-            <div class="pyro-content">
-                <div class="pyro-types">
-                    <div class="pyro-card">
-                        <div class="pyro-card-inner">
-                            <div class="pyro-card-front">
-                                <i class="fas fa-burst"></i>
-                                <h3>Stage Effects</h3>
-                            </div>
-                            <div class="pyro-card-back">
-                                <p>Flames, sparks, and concussion effects synchronized to music</p>
-                                <button class="pyro-video-btn" data-video="stage-effects">Watch Demo</button>
-                            </div>
+            <div class="pyro-types">
+                <div class="pyro-card">
+                    <div class="pyro-card-inner">
+                        <div class="pyro-card-front">
+                            <h3>Stage Effects</h3>
                         </div>
-                    </div>
-                    <div class="pyro-card">
-                        <div class="pyro-card-inner">
-                            <div class="pyro-card-front">
-                                <i class="fas fa-fire-alt"></i>
-                                <h3>Outdoor Fireworks</h3>
-                            </div>
-                            <div class="pyro-card-back">
-                                <p>Custom-designed aerial displays for weddings and large events</p>
-                                <button class="pyro-video-btn" data-video="fireworks">Watch Demo</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="pyro-card">
-                        <div class="pyro-card-inner">
-                            <div class="pyro-card-front">
-                                <i class="fas fa-cloud"></i>
-                                <h3>Special Effects</h3>
-                            </div>
-                            <div class="pyro-card-back">
-                                <p>CO2 jets, cryo fog, and other atmospheric effects</p>
-                                <button class="pyro-video-btn" data-video="special-effects">Watch Demo</button>
-                            </div>
+                        <div class="pyro-card-back">
+                            <p>Flames, sparks, and concussion effects synchronized to music</p>
+                            <button class="pyro-video-btn" data-video="stage-effects">Watch Demo</button>
                         </div>
                     </div>
                 </div>
-                <div class="safety-info">
-                    <div class="safety-card">
-                        <i class="fas fa-shield-alt"></i>
-                        <h3>Certified & Insured</h3>
-                        <p>All our pyrotechnicians are fully certified and we carry comprehensive liability insurance for your peace of mind.</p>
+                <div class="pyro-card">
+                    <div class="pyro-card-inner">
+                        <div class="pyro-card-front">
+                            <h3>Outdoor Fireworks</h3>
+                        </div>
+                        <div class="pyro-card-back">
+                            <p>Custom-designed aerial displays for weddings and large events</p>
+                            <button class="pyro-video-btn" data-video="fireworks">Watch Demo</button>
+                        </div>
                     </div>
                 </div>
+                <div class="pyro-card">
+                    <div class="pyro-card-inner">
+                        <div class="pyro-card-front">
+                            <h3>Special Effects</h3>
+                        </div>
+                        <div class="pyro-card-back">
+                            <p>CO2 jets, cryo fog, and other atmospheric effects</p>
+                            <button class="pyro-video-btn" data-video="special-effects">Watch Demo</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="safety-card">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Certified & Insured</h3>
+                <p>All our pyrotechnicians are fully certified and we carry comprehensive liability insurance for your peace of mind.</p>
             </div>
         </div>
     </section>
 
-    <!-- Lighting Section -->
+    <!-- Lighting Solutions -->
     <section id="lighting" class="lighting-section reveal">
         <div class="container">
             <div class="section-header">
                 <h2><i class="fas fa-lightbulb"></i> Lighting Solutions</h2>
-                <div class="color-bar"></div>
                 <p class="section-subtitle">Transform your event with dynamic lighting</p>
             </div>
-            <div class="lighting-content">
-                <div class="lighting-types">
-                    <div class="lighting-card">
-                        <div class="lighting-icon"><i class="fas fa-theater-masks"></i></div>
-                        <h3>Stage Lighting</h3>
-                        <p>Professional stage lighting setups for performances and presentations</p>
-                        <button class="modal-trigger" data-modal="stage-lighting">View Details</button>
+            <div class="lighting-types">
+                <div class="lighting-card modal-trigger" data-modal="stageLightingModal">
+                    <div class="lighting-icon">
+                        <i class="fas fa-star"></i>
+                        <div class="icon-pulse"></div>
                     </div>
-                    <div class="lighting-card">
-                        <div class="lighting-icon"><i class="fas fa-archway"></i></div>
-                        <h3>Venue Lighting</h3>
-                        <p>Complete venue illumination to create the perfect atmosphere</p>
-                        <button class="modal-trigger" data-modal="venue-lighting">View Details</button>
-                    </div>
-                    <div class="lighting-card">
-                        <div class="lighting-icon"><i class="fas fa-tree"></i></div>
-                        <h3>Architectural Lighting</h3>
-                        <p>Highlighting venue features with strategic lighting placement</p>
-                        <button class="modal-trigger" data-modal="arch-lighting">View Details</button>
+                    <h3>Stage Lighting</h3>
+                    <p>Professional stage lighting setups for performances and presentations</p>
+                    <div class="lighting-features">
+                        <span><i class="fas fa-check"></i> Spotlights</span>
+                        <span><i class="fas fa-check"></i> Moving Heads</span>
+                        <span><i class="fas fa-check"></i> Laser Effects</span>
                     </div>
                 </div>
-                <div class="lighting-showcase">
-                    <div class="lighting-control-panel">
-                        <div class="lighting-control">
-                            <label>Intensity</label>
-                            <input type="range" min="0" max="100" value="50" class="lighting-slider" id="intensity">
-                        </div>
-                        <div class="lighting-control">
-                            <label>Color</label>
-                            <input type="color" value="#ff0033" class="lighting-color" id="lighting-color">
-                        </div>
-                        <div class="lighting-control">
-                            <label>Effect</label>
-                            <select class="lighting-effect" id="lighting-effect">
-                                <option value="static">Static</option>
-                                <option value="pulse">Pulse</option>
-                                <option value="strobe">Strobe</option>
-                                <option value="rainbow">Rainbow</option>
-                            </select>
-                        </div>
+                <div class="lighting-card modal-trigger" data-modal="venueLightingModal">
+                    <div class="lighting-icon">
+                        <i class="fas fa-lightbulb"></i>
+                        <div class="icon-pulse"></div>
                     </div>
-                    <div class="lighting-preview">
-                        <div class="venue-model">
-                            <div class="stage" id="stage-light"></div>
-                            <div class="dance-floor" id="dance-floor-light"></div>
-                            <div class="walls" id="wall-lights"></div>
+                    <h3>Venue Lighting</h3>
+                    <p>Complete venue illumination to create the perfect atmosphere</p>
+                    <div class="lighting-features">
+                        <span><i class="fas fa-check"></i> Uplighting</span>
+                        <span><i class="fas fa-check"></i> Wash Lights</span>
+                        <span><i class="fas fa-check"></i> Ambient Lighting</span>
+                    </div>
+                </div>
+                <div class="lighting-card modal-trigger" data-modal="architecturalLightingModal">
+                    <div class="lighting-icon">
+                        <i class="fas fa-building"></i>
+                        <div class="icon-pulse"></div>
+                    </div>
+                    <h3>Architectural Lighting</h3>
+                    <p>Highlighting venue features with strategic lighting placement</p>
+                    <div class="lighting-features">
+                        <span><i class="fas fa-check"></i> LED Strips</span>
+                        <span><i class="fas fa-check"></i> Gobo Projections</span>
+                        <span><i class="fas fa-check"></i> Accent Lighting</span>
+                    </div>
+                </div>
+            </div>
+            <div class="lighting-playground-collapsible">
+                <button class="playground-collapse-toggle">
+                    <i class="fas fa-chevron-down"></i> Try Our Lighting Designer
+                </button>
+                <div class="playground-collapsible-content">
+                    <div class="lighting-playground">
+                        <div class="playground-header">
+                            <i class="fas fa-lightbulb"></i>
+                            <h3>Lighting Designer</h3>
+                        </div>
+                        <div class="playground-container">
+                            <div class="lighting-control-panel">
+                                <div class="control-group">
+                                    <h4><i class="fas fa-sliders-h"></i> Controls</h4>
+                                    <div class="lighting-control">
+                                        <label for="brightness">Brightness</label>
+                                        <input type="range" class="lighting-slider" id="brightness" min="0" max="100" value="100">
+                                    </div>
+                                    <div class="lighting-control">
+                                        <label for="speed">Effect Speed</label>
+                                        <input type="range" class="lighting-slider" id="speed" min="0" max="100" value="50">
+                                    </div>
+                                    <div class="lighting-control">
+                                        <label for="color">Color</label>
+                                        <input type="color" class="lighting-color" id="color" value="#FF0033">
+                                        <div class="color-palette">
+                                            <div class="preset-color" data-color="#FF0033"></div>
+                                            <div class="preset-color" data-color="#FF6F00"></div>
+                                            <div class="preset-color" data-color="#00C4B4"></div>
+                                            <div class="preset-color" data-color="#007BFF"></div>
+                                            <div class="preset-color" data-color="#FFFFFF"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <h4><i class="fas fa-magic"></i> Effects</h4>
+                                    <select class="lighting-effect">
+                                        <option value="none">Static</option>
+                                        <option value="pulseEffect">Pulse</option>
+                                        <option value="strobeEffect">Strobe</option>
+                                        <option value="rainbowWave">Rainbow Wave</option>
+                                        <option value="colorChase">Color Chase</option>
+                                    </select>
+                                </div>
+                                <div class="control-group">
+                                    <h4><i class="fas fa-map-marker-alt"></i> Zones</h4>
+                                    <div class="zone-controls">
+                                        <label class="zone-toggle">
+                                            <input type="checkbox" checked>
+                                            <span class="toggle-slider"><span class="slider"></span></span>
+                                            Stage
+                                        </label>
+                                        <label class="zone-toggle">
+                                            <input type="checkbox" checked>
+                                            <span class="toggle-slider"><span class="slider"></span></span>
+                                            Stage Front
+                                        </label>
+                                        <label class="zone-toggle">
+                                            <input type="checkbox" checked>
+                                            <span class="toggle-slider"><span class="slider"></span></span>
+                                            Dance Floor
+                                        </label>
+                                        <label class="zone-toggle">
+                                            <input type="checkbox" checked>
+                                            <span class="toggle-slider"><span class="slider"></span></span>
+                                            Walls
+                                        </label>
+                                        <label class="zone-toggle">
+                                            <input type="checkbox" checked>
+                                            <span class="toggle-slider"><span class="slider"></span></span>
+                                            Ceiling
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="playground-actions">
+                                    <button class="action-btn save"><i class="fas fa-save"></i> Save Preset</button>
+                                    <button class="action-btn reset"><i class="fas fa-undo"></i> Reset</button>
+                                </div>
+                            </div>
+                            <div class="lighting-preview">
+                                <div class="venue-model">
+                                    <div class="walls">
+                                        <div class="left-wall"></div>
+                                        <div class="right-wall"></div>
+                                        <div class="back-wall"></div>
+                                    </div>
+                                    <div class="stage-area">
+                                        <div class="stage"></div>
+                                        <div class="stage-front"></div>
+                                    </div>
+                                    <div class="dance-floor"></div>
+                                    <div class="ceiling"></div>
+                                    <div class="audience"></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -324,7 +397,7 @@
     <!-- Video Modal -->
     <div class="video-modal">
         <div class="modal-content">
-            <span class="close-modal"><i class="fas fa-times"></i></span>
+            <button class="close-modal"><i class="fas fa-times"></i></button>
             <video id="modalVideo" controls>
                 <source src="" type="video/mp4">
                 Your browser does not support the video tag.
@@ -333,11 +406,11 @@
     </div>
 
     <!-- Service Modals -->
-    <div class="service-modal" id="wedding-dj">
+    <div class="service-modal" id="weddingModal">
         <div class="modal-content">
-            <span class="close-modal"><i class="fas fa-times"></i></span>
+            <button class="close-modal"><i class="fas fa-times"></i></button>
             <div class="modal-header">
-                <h3><i class="fas fa-ring"></i> Wedding DJ Services</h3>
+                <h2>Wedding DJ Services</h2>
             </div>
             <div class="modal-body">
                 <div class="modal-image">
@@ -353,10 +426,10 @@
                         <li>Ability to read the crowd and adjust music accordingly</li>
                     </ul>
                     <div class="pricing">
-                        <h4>Packages Starting From:</h4>
+                        <h3>Packages Starting From:</h3>
                         <div class="price-cards">
                             <div class="price-card">
-                                <h5>Basic</h5>
+                                <h4>Basic</h4>
                                 <div class="price">Ksh 10,000</div>
                                 <ul>
                                     <li>4 hours of service</li>
@@ -365,7 +438,7 @@
                                 </ul>
                             </div>
                             <div class="price-card featured">
-                                <h5>Premium</h5>
+                                <h4>Premium</h4>
                                 <div class="price">Ksh 30,000</div>
                                 <ul>
                                     <li>6 hours of service</li>
@@ -375,7 +448,7 @@
                                 </ul>
                             </div>
                             <div class="price-card">
-                                <h5>Platinum</h5>
+                                <h4>Platinum</h4>
                                 <div class="price">Ksh 100,000</div>
                                 <ul>
                                     <li>8 hours of service</li>
@@ -390,60 +463,235 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <a href="#book" class="btn cta-btn book-now">Book Now</a>
+                <a href="#booking" class="btn cta-btn">Book Now</a>
             </div>
         </div>
     </div>
 
-    <!-- Similar modals for other services would go here -->
-    <!-- corporate-dj, private-dj, stage-lighting, venue-lighting, arch-lighting -->
+    <div class="service-modal" id="corporateModal">
+        <div class="modal-content">
+            <button class="close-modal"><i class="fas fa-times"></i></button>
+            <div class="modal-header">
+                <h2>Corporate Event DJ Services</h2>
+            </div>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img src="assets/corporate-dj.jpg" alt="Corporate Event DJ">
+                </div>
+                <div class="modal-text">
+                    <p>Our corporate event DJ services deliver professional sound for product launches, galas, and company parties, ensuring a polished and engaging experience.</p>
+                    <ul>
+                        <li>Customized playlists for professional settings</li>
+                        <li>High-quality audio equipment</li>
+                        <li>MC services for event announcements</li>
+                        <li>Seamless audio transitions</li>
+                        <li>Professional setup and breakdown</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="#booking" class="btn cta-btn">Book Now</a>
+            </div>
+        </div>
+    </div>
 
-    <!-- Testimonials Section -->
+    <div class="service-modal" id="churchModal">
+        <div class="modal-content">
+            <button class="close-modal"><i class="fas fa-times"></i></button>
+            <div class="modal-header">
+                <h2>Church Event DJ Services</h2>
+            </div>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img src="assets/church-dj.jpg" alt="Church Event DJ">
+                </div>
+                <div class="modal-text">
+                    <p>Our church event DJ services provide uplifting and appropriate music to enhance spiritual gatherings and events.</p>
+                    <ul>
+                        <li>Curated gospel and inspirational playlists</li>
+                        <li>High-quality audio equipment</li>
+                        <li>Seamless transitions for worship and events</li>
+                        <li>Professional setup and breakdown</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="#booking" class="btn cta-btn">Book Now</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="service-modal" id="partyModal">
+        <div class="modal-content">
+            <button class="close-modal"><i class="fas fa-times"></i></button>
+            <div class="modal-header">
+                <h2>Private Party DJ Services</h2>
+            </div>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img src="assets/party-dj.jpg" alt="Private Party DJ">
+                </div>
+                <div class="modal-text">
+                    <p>Our private party DJ services create tailored playlists to match your personal taste and party theme, ensuring an unforgettable event.</p>
+                    <ul>
+                        <li>Personalized music selection</li>
+                        <li>High-energy performances</li>
+                        <li>Interactive crowd engagement</li>
+                        <li>Custom lighting options</li>
+                        <li>Flexible event durations</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="#booking" class="btn cta-btn">Book Now</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="service-modal" id="stageLightingModal">
+        <div class="modal-content">
+            <button class="close-modal"><i class="fas fa-times"></i></button>
+            <div class="modal-header">
+                <h2>Stage Lighting</h2>
+            </div>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img src="assets/stage-lighting.jpg" alt="Stage Lighting">
+                </div>
+                <div class="modal-text">
+                    <p>Our stage lighting solutions provide professional-grade illumination for performances, presentations, and live events, enhancing visibility and ambiance.</p>
+                    <ul>
+                        <li>Dynamic spotlight systems</li>
+                        <li>Color-changing LED fixtures</li>
+                        <li>Synchronized lighting effects</li>
+                        <li>Customizable setups for any stage size</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="#booking" class="btn cta-btn">Book Now</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="service-modal" id="venueLightingModal">
+        <div class="modal-content">
+            <button class="close-modal"><i class="fas fa-times"></i></button>
+            <div class="modal-header">
+                <h2>Venue Lighting</h2>
+            </div>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img src="assets/venue-lighting.jpg" alt="Venue Lighting">
+                </div>
+                <div class="modal-text">
+                    <p>Transform your venue with our comprehensive lighting solutions, creating the perfect atmosphere for any event.</p>
+                    <ul>
+                        <li>Ambient lighting for mood setting</li>
+                        <li>Custom color schemes</li>
+                        <li>Energy-efficient LED systems</li>
+                        <li>Full venue coverage</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="#booking" class="btn cta-btn">Book Now</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="service-modal" id="architecturalLightingModal">
+        <div class="modal-content">
+            <button class="close-modal"><i class="fas fa-times"></i></button>
+            <div class="modal-header">
+                <h2>Architectural Lighting</h2>
+            </div>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img src="assets/architectural-lighting.jpg" alt="Architectural Lighting">
+                </div>
+                <div class="modal-text">
+                    <p>Highlight your venue's unique features with our strategic architectural lighting solutions, designed to enhance aesthetics and create focal points.</p>
+                    <ul>
+                        <li>Exterior and interior accent lighting</li>
+                        <li>Customizable color and intensity</li>
+                        <li>Precision placement for maximum impact</li>
+                        <li>Integration with event themes</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="#booking" class="btn cta-btn">Book Now</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonials -->
     <section id="testimonials" class="testimonials reveal">
         <div class="container">
             <div class="section-header">
                 <h2><i class="fas fa-quote-left"></i> Client Testimonials</h2>
-                <div class="color-bar"></div>
-                <p class="section-subtitle">What our clients say about us</p>
+                <p class="section-subtitle">Hear what our clients say</p>
             </div>
             <div class="testimonial-slider swiper">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide testimonial-card">
-                        <div class="client-img">
-                            <img src="assets/client1.jpg" loading="lazy" alt="Sarah & James">
-                        </div>
-                        <div class="testimonial-content">
-                            <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                            <p>"Konstant absolutely made our wedding reception! The music was perfect and the fireworks display was the talk of all our guests."</p>
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="client-img">
+                                <img src="assets/client1.jpg" alt="Sarah & James">
+                            </div>
+                            <div class="testimonial-content">
+                                <p>"Konstant made our wedding reception unforgettable! The music was perfect and the lighting transformed our venue."</p>
+                                <div class="rating">★★★★★</div>
+                            </div>
                             <div class="client-info">
-                                <h4>Sarah & James</h4>
+                                <h4>Philip & Joy</h4>
                                 <span>Wedding Clients</span>
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide testimonial-card">
-                        <div class="client-img">
-                            <img src="assets/client2.jpg" loading="lazy" alt="Mark Johnson">
-                        </div>
-                        <div class="testimonial-content">
-                            <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                            <p>"We've hired Konstant for three corporate events now. Their ability to read the crowd and adjust the music is unmatched."</p>
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="client-img">
+                                <img src="assets/client2.jpg" alt="Mark Johnson">
+                            </div>
+                            <div class="testimonial-content">
+                                <p>"We've hired Konstant for three corporate events now. Their ability to read the crowd and adjust the music is unmatched."</p>
+                                <div class="rating">★★★★★</div>
+                            </div>
                             <div class="client-info">
-                                <h4>Mark Johnson</h4>
-                                <span>Event Manager, TechCorp</span>
+                                <h4>Neko Slevin</h4>
+                                <span>Event Manager, SnooG Analytics</span>
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide testimonial-card">
-                        <div class="client-img">
-                            <img src="assets/client3.jpg" loading="lazy" alt="Lisa Mwangi">
-                        </div>
-                        <div class="testimonial-content">
-                            <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                            <p>"The club night with Konstant was insane! The music and fire effects had everyone talking for weeks."</p>
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="client-img">
+                                <img src="assets/client3.jpg" alt="Lisa Mwangi">
+                            </div>
+                            <div class="testimonial-content">
+                                <p>"The club night with Konstant was insane! The music and fire effects had everyone talking for weeks."</p>
+                                <div class="rating">★★★★★</div>
+                            </div>
                             <div class="client-info">
-                                <h4>Lisa Mwangi</h4>
+                                <h4>Alex Ndolo</h4>
                                 <span>Club Owner</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="client-img">
+                                <img src="assets/client4.jpg" alt="Emma Wanjiru">
+                            </div>
+                            <div class="testimonial-content">
+                                <p>"Konstant's church event DJ service brought our worship night to life with uplifting music and perfect sound quality."</p>
+                                <div class="rating">★★★★★</div>
+                            </div>
+                            <div class="client-info">
+                                <h4>Emma Wanjiru</h4>
+                                <span>Church Event Organizer</span>
                             </div>
                         </div>
                     </div>
@@ -453,90 +701,74 @@
         </div>
     </section>
 
-    <!-- Gallery Section -->
+    <!-- Gallery -->
     <section id="gallery" class="gallery reveal">
         <div class="container">
             <div class="section-header">
-                <h2><i class="fas fa-images"></i> Event Gallery</h2>
-                <div class="color-bar"></div>
+                <h2><i class="fas fa-camera"></i> Event Gallery</h2>
                 <p class="section-subtitle">Moments we've created</p>
             </div>
             <div class="gallery-filter">
                 <button class="filter-btn active" data-filter="all">All Events</button>
-                <button class="filter-btn" data-filter="weddings">Weddings</button>
+                <button class="filter-btn" data-filter="wedding">Weddings</button>
                 <button class="filter-btn" data-filter="corporate">Corporate</button>
-                <button class="filter-btn" data-filter="clubs">Clubs</button>
-                <button class="filter-btn" data-filter="pyrotechnics">Pyrotechnics</button>
+                <button class="filter-btn" data-filter="club">Clubs</button>
+                <button class="filter-btn" data-filter="pyro">Pyrotechnics</button>
                 <button class="filter-btn" data-filter="lighting">Lighting</button>
             </div>
             <div class="gallery-grid">
-                <div class="gallery-item" data-category="weddings">
-                    <img src="assets/gallery1.jpg" loading="lazy" alt="Karen Wedding">
+                <div class="gallery-item" data-category="wedding">
+                    <img src="assets/wedding.jpg" alt="Karen Wedding">
                     <div class="gallery-overlay">
                         <h3>Karen Wedding</h3>
                         <p>DJ & Pyro Display</p>
-                        <button class="view-btn"><i class="fas fa-search"></i></button>
+                        <button class="view-btn"><i class="fas fa-eye"></i></button>
                     </div>
                 </div>
                 <div class="gallery-item" data-category="corporate">
-                    <img src="assets/gallery2.jpg" loading="lazy" alt="Tech Conference">
+                    <img src="assets/conference.jpg" alt="Tech Conference">
                     <div class="gallery-overlay">
                         <h3>Tech Conference</h3>
                         <p>Closing Party</p>
-                        <button class="view-btn"><i class="fas fa-search"></i></button>
+                        <button class="view-btn"><i class="fas fa-eye"></i></button>
                     </div>
                 </div>
-                <div class="gallery-item" data-category="pyrotechnics">
-                    <img src="assets/gallery3.jpg" loading="lazy" alt="New Year's Eve">
+                <div class="gallery-item" data-category="pyro">
+                    <img src="assets/fireworks.jpg" alt="New Year's Eve">
                     <div class="gallery-overlay">
                         <h3>New Year's Eve</h3>
                         <p>Aerial Fireworks</p>
-                        <button class="view-btn"><i class="fas fa-search"></i></button>
+                        <button class="view-btn"><i class="fas fa-eye"></i></button>
                     </div>
                 </div>
-                <div class="gallery-item" data-category="clubs">
-                    <img src="assets/gallery4.jpg" loading="lazy" alt="Bounce Nightclub">
+                <div class="gallery-item" data-category="club">
+                    <img src="assets/club.jpg" alt="Bounce Nightclub">
                     <div class="gallery-overlay">
                         <h3>Bounce Nightclub</h3>
                         <p>Friday Night Set</p>
-                        <button class="view-btn"><i class="fas fa-search"></i></button>
+                        <button class="view-btn"><i class="fas fa-eye"></i></button>
                     </div>
                 </div>
                 <div class="gallery-item" data-category="lighting">
-                    <img src="assets/gallery5.jpg" loading="lazy" alt="Concert Lighting">
+                    <img src="assets/concert-lighting.jpg" alt="Concert Lighting">
                     <div class="gallery-overlay">
                         <h3>Concert Lighting</h3>
                         <p>Stage Effects</p>
-                        <button class="view-btn"><i class="fas fa-search"></i></button>
+                        <button class="view-btn"><i class="fas fa-eye"></i></button>
                     </div>
                 </div>
             </div>
             <div class="view-more">
-                <a href="#gallery" class="view-more-btn">View More Events</a>
+                <a href="#" class="view-more-btn">View More Events</a>
             </div>
         </div>
     </section>
 
-    <!-- Gallery Lightbox -->
-    <div class="gallery-lightbox">
-        <div class="lightbox-content">
-            <span class="close-lightbox"><i class="fas fa-times"></i></span>
-            <img class="lightbox-img" src="" alt="">
-            <div class="lightbox-caption">
-                <h3></h3>
-                <p></p>
-            </div>
-            <button class="lightbox-nav prev"><i class="fas fa-chevron-left"></i></button>
-            <button class="lightbox-nav next"><i class="fas fa-chevron-right"></i></button>
-        </div>
-    </div>
-
-    <!-- Contact Section -->
-    <section id="book" class="contact reveal">
+    <!-- Booking/Contact -->
+    <section id="booking" class="contact reveal">
         <div class="container">
             <div class="section-header">
                 <h2><i class="fas fa-calendar-check"></i> Book Your Event</h2>
-                <div class="color-bar"></div>
                 <p class="section-subtitle">Let's make your event unforgettable</p>
             </div>
             <div class="booking-container">
@@ -545,100 +777,115 @@
                     <p>Reach out to discuss your event vision.</p>
                     <div class="info-cards">
                         <div class="info-card">
-                            <i class="fas fa-phone"></i>
-                            <div>
-                                <h4>Call Us</h4>
-                                <p>+254 750 038 110</p>
+                            <div class="info-card-content">
+                                <i class="fas fa-phone"></i>
+                                <div class="info-text">
+                                    <h4>Call Us</h4>
+                                    <p>+254 750 038 110</p>
+                                </div>
                             </div>
+                            <a href="tel:+254750038110" class="contact-btn">Call Now</a>
                         </div>
                         <div class="info-card">
-                            <i class="fas fa-envelope"></i>
-                            <div>
-                                <h4>Email Us</h4>
-                                <p>snooggoons@gmail..com</p>
+                            <div class="info-card-content">
+                                <i class="fas fa-envelope"></i>
+                                <div class="info-text">
+                                    <h4>Email Us</h4>
+                                    <p>snooggoons@gmail.com</p>
+                                </div>
                             </div>
+                            <a href="mailto:snooggoons@gmail.com" class="contact-btn">Email Now</a>
                         </div>
                         <div class="info-card">
-                            <i class="fas fa-clock"></i>
-                            <div>
-                                <h4>Availability</h4>
-                                <p>24/7 for inquiries</p>
+                            <div class="info-card-content">
+                                <i class="fab fa-whatsapp"></i>
+                                <div class="info-text">
+                                    <h4>Availability</h4>
+                                    <p>24/7 for inquiries</p>
+                                </div>
                             </div>
+                            <a href="https://wa.me/+254750038110" class="contact-btn">WhatsApp</a>
                         </div>
                     </div>
                 </div>
-                <form id="bookingForm" class="booking-form" action="/submit-booking">
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="name">Your Name</label>
-                            <input type="text" id="name" required>
+                <div class="booking-form">
+                    <form id="bookingForm" action="https://formspree.io/f/mblkygoa" method="POST"></form>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="event-type">Event Type</label>
+                                <select id="event-type" name="event-type" required>
+                                    <option value="">Select Event Type</option>
+                                    <option value="wedding">Wedding</option>
+                                    <option value="corporate">Corporate Event</option>
+                                    <option value="club">Club Night</option>
+                                    <option value="party">Private Party</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="event-date">Event Date</label>
+                                <input type="date" id="event-date" name="event-date" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="event-time">Event Time</label>
+                                <input type="time" id="event-time" name="event-time" required>
+                            </div>
                         </div>
                         <div class="form-group">
-                            <label for="email">Email Address</label>
-                            <input type="email" id="email" required>
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="phone">Phone Number</label>
-                            <input type="tel" id="phone" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="eventType">Event Type</label>
-                            <select id="eventType" required>
-                                <option value="">Select Event Type</option>
-                                <option value="wedding">Wedding</option>
-                                <option value="corporate">Corporate Event</option>
-                                <option value="club">Club Night</option>
-                                <option value="private">Private Party</option>
-                                <option value="other">Other</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="eventDate">Event Date</label>
-                            <input type="date" id="eventDate" required>
+                            <label>Services Needed</label>
+                            <div class="checkbox-group">
+                                <label class="checkbox-container">
+                                    DJ Services
+                                    <input type="checkbox" name="services" value="dj">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="checkbox-container">
+                                    Pyrotechnics
+                                    <input type="checkbox" name="services" value="pyro">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="checkbox-container">
+                                    Lighting
+                                    <input type="checkbox" name="services" value="lighting">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="checkbox-container">
+                                    Sound Equipment
+                                    <input type="checkbox" name="services" value="sound">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
                         </div>
                         <div class="form-group">
-                            <label for="eventTime">Event Time</label>
-                            <input type="time" id="eventTime" required>
+                            <label for="details">Additional Details</label>
+                            <textarea id="details" name="details"></textarea>
                         </div>
-                    </div>
-                    <div class="form-group">
-                        <label>Services Needed</label>
-                        <div class="checkbox-group">
-                            <label class="checkbox-container">DJ Services
-                                <input type="checkbox" name="services" value="dj">
-                                <span class="checkmark"></span>
-                            </label>
-                            <label class="checkbox-container">Pyrotechnics
-                                <input type="checkbox" name="services" value="pyro">
-                                <span class="checkmark"></span>
-                            </label>
-                            <label class="checkbox-container">Lighting
-                                <input type="checkbox" name="services" value="lighting">
-                                <span class="checkmark"></span>
-                            </label>
-                            <label class="checkbox-container">Sound Equipment
-                                <input type="checkbox" name="services" value="sound">
-                                <span class="checkmark"></span>
-                            </label>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Additional Details</label>
-                        <textarea id="message" rows="5"></textarea>
-                    </div>
-                    <button type="submit" class="submit-btn">
-                        <span class="btn-text">Send Booking Request</span>
-                        <div class="loading-anim">
-                            <div class="dot"></div>
-                            <div class="dot"></div>
-                            <div class="dot"></div>
-                        </div>
-                    </button>
-                </form>
+                        <button type="submit" class="submit-btn">
+                            <span class="btn-text">Send Booking Request</span>
+                            <div class="loading-anim">
+                                <div class="loading-dot"></div>
+                                <div class="loading-dot"></div>
+                                <div class="loading-dot"></div>
+                            </div>
+                        </button>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
@@ -646,69 +893,65 @@
     <!-- Success Modal -->
     <div class="success-modal">
         <div class="modal-content">
-            <svg class="success-animation" viewBox="0 0 66 66">
-                <circle class="checkmark__circle" cx="33" cy="33" r="30"/>
-                <path class="checkmark__check" d="M20 33.5l10 10L46 20"/>
-            </svg>
-            <h3>Booking Request Sent!</h3>
+            <div class="success-animation">
+                <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+                    <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/>
+                    <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+                </svg>
+            </div>
+            <h2>Booking Request Sent!</h2>
             <p>We've received your booking details and will contact you within 24 hours to confirm availability and discuss your event.</p>
             <button class="close-success-modal">OK</button>
         </div>
     </div>
 
-    <!-- WhatsApp Float -->
-    <a href="https://wa.me/+254 750 038 110" class="whatsapp-float"><i class="fab fa-whatsapp"></i></a>
-
-    <!-- Sticky Book Now -->
-    <a href="#book" class="sticky-book">Book Now →</a>
-
-    <!-- Easter Egg -->
+    <!-- Sticky Elements -->
+    <a href="https://wa.me/+254750038110" class="whatsapp-float"><i class="fab fa-whatsapp"></i></a>
+    <button class="sticky-book"><i class="fas fa-calendar-check"></i> Book Now</button>
+    <button class="back-to-top"><i class="fas fa-arrow-up"></i></button>
     <div class="easter-egg">🔥 Light Show Activated!</div>
 
-    <!-- Back to Top -->
-    <button class="back-to-top"><i class="fas fa-arrow-up"></i></button>
-
     <!-- Footer -->
-    <footer>
-        <div class="container footer-content">
-            <div class="footer-col">
-                <h3>K.ent Entertainment</h3>
-                <p>Premium DJ services, pyrotechnics and lighting solutions for events across Kenya. Creating unforgettable experiences since 2015.</p>
-                <div class="footer-socials">
-                    <a href="#" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
-                    <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="email"><i class="fas fa-envelope"></i></a>
+    <footer class="footer reveal">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>Konstant Entertainment</h3>
+                    <p>Premium DJ services, pyrotechnics and lighting solutions for events across Kenya. Creating unforgettable experiences since 2015.</p>
+                    <div class="footer-socials">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-x"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#dj-services">DJ Services</a></li>
+                        <li><a href="#pyrotechnics">Pyrotechnics</a></li>
+                        <li><a href="#lighting">Lighting</a></li>
+                        <li><a href="#booking">Booking</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-phone"></i> +254 750 038 110</p>
+                    <p><i class="fas fa-envelope"></i> snooggoons@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</p>
                 </div>
             </div>
-            <div class="footer-col">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#dj">DJ Services</a></li>
-                    <li><a href="#pyro">Pyrotechnics</a></li>
-                    <li><a href="#lighting">Lighting</a></li>
-                    <li><a href="#book">Booking</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h3>Contact Us</h3>
-                <ul class="contact-info">
-                    <li><i class="fas fa-phone"></i> +254 750 038 110</li>
-                    <li><i class="fas fa-envelope"></i> snooggoons@gmail.com</li>
-                    <li><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</li>
-                </ul>
-            </div>
-        </div>
-        <div class="footer-bottom container">
-            <p>© 2025 K.ent Entertainment. All Rights Reserved.</p>
-            <div class="legal-links">
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms of Service</a>
+            <div class="footer-bottom">
+                <p>© 2025 SnooG Analytics. All Rights Reserved.</p>
+                <div class="legal-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
             </div>
         </div>
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.4.1/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
