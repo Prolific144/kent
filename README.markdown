@@ -29,3 +29,6 @@ A dynamic, responsive website for K.Ent Entertainment, showcasing premium DJ ser
 ## Notes
 - Requires internet for external libraries (e.g., Swiper.js, Font Awesome).
 - Form submission uses a formspree API endpoint; replace with a real backend for production.
+
+
+## Powered By SnooG Analytics
