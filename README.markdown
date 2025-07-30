@@ -1,8 +1,8 @@
-# K.Ent Entertainment Website
+# Konstant Entertainment Website
 
 A dynamic, responsive website for K.Ent Entertainment, showcasing premium DJ services, pyrotechnics, and lighting solutions for events across Kenya. Built with HTML, CSS, and JavaScript, it features interactive elements like a music player, lighting designer, and booking form.
 
-![K.Ent Entertainment Preview](og-preview.jpg)
+![K.Ent Entertainment Preview](assets/og-preview.jpg)
 
 ## Features
 - **Responsive Design**: Adapts seamlessly to desktop and mobile devices.
