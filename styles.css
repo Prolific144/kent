@@ -262,7 +262,7 @@ body.light-mode .section-subtitle {
 }
 .loader-text2 {
     font-family: var(--font-futuristic);
-    color: var(--secondary);
+    color: var(--primary);
     font-size: 0.8rem;
 }
 /* === Music Player === */
