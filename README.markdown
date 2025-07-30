@@ -15,7 +15,7 @@ A dynamic, responsive website for K.Ent Entertainment, showcasing premium DJ ser
 ## Getting Started
 1. Clone the repository.
 2. Open `index.html` in a browser.
-3. Ensure assets (e.g., `og-preview.jpg`, videos, audio) are in the `assets/` folder.
+3. Ensure assets (e.g., images, videos, audio) are in the `assets/` folder.
 4. Host on a web server for full functionality (e.g., form submissions).
 
 ## Technologies
@@ -24,6 +24,8 @@ A dynamic, responsive website for K.Ent Entertainment, showcasing premium DJ ser
 - **JavaScript**: Interactivity with vanilla JS and Swiper.js for sliders.
 - **Font Awesome**: Icons for enhanced UI.
 
+  ##Powered By SnooG Analytics
+
 ## Notes
 - Requires internet for external libraries (e.g., Swiper.js, Font Awesome).
-- Form submission uses a mock API endpoint; replace with a real backend for production.
+- Form submission uses a formspree API endpoint; replace with a real backend for production.
